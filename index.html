@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanitCash Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="top-bar">
+            <div class="container top-bar-content">
+                <div class="top-left">
+                    <span><i class="fas fa-phone-alt"></i> 407-984-5529</span>
+                    <span class="top-mail"><i class="fas fa-envelope"></i> support@canitcash.com</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Richmond, MN 56368</span>
+                </div>
+                <div class="top-right">
+                    <div class="social-icons-mini">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-google"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-reddit-alien"></i>
+                        <i class="fab fa-x-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <div class="container navbar-content">
+                <div class="logo">
+                    <img src="Icons/Canitcash logo.png" alt="Canitcash Logo" class="nav-logo-img">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">TRUST PLEDGE</a></li>
+                    <li><a href="#">SUPPORT</a></li>
+                    <li><a href="#">CART</a></li>
+                    <li><a href="#" class="nav-login">LOGIN</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container hero-content">
+                <div class="hero-top-row">
+                    <h5 class="hero-sup-text">Top dollar - Instant quotes</h5>
+                    <h1 class="hero-headline">Sell your laptop, desktop <br> & projector for cash</h1>
+                </div>
+
+                <div class="hero-middle-row">
+                    <div class="hero-middle-left">
+                        <h2 class="hero-search-title">Search for your model to <br> get an instant quote.</h2>
+                        <div class="hero-search-box">
+                            <input type="text" placeholder="Search for your model here...">
+                        </div>
+                    </div>
+                    <div class="hero-middle-right">
+                        <p class="hero-desc-para">
+                            Get an instant quote for your used tech in seconds. Canitcash is the trusted, hassle-free
+                            way to sell your computers and equipment for cash. Just search or use the dropdowns to
+                            select your model and get a top-dollar quote with a guaranteed 24-hour payout. We buy all
+                            conditions of tech—new, used, or even broken.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hero-bottom-row">
+                    <div class="hero-divider">
+                        <span>— OR — Select the Device, Brand, and Model</span>
+                    </div>
+
+                    <div class="hero-actions-row">
+                        <div class="hero-dropdowns">
+                            <select class="dropdown-select" id="device-select">
+                                <option>Select Device</option>
+                                <option>Laptop</option>
+                                <option>Desktop</option>
+                                <option>Projector</option>
+                            </select>
+                            <select class="dropdown-select" id="brand-select">
+                                <option>Select Brand</option>
+                            </select>
+                            <select class="dropdown-select" id="model-select">
+                                <option>Select Model</option>
+                            </select>
+                        </div>
+                        <button class="btn-primary btn-quote-orange" id="get-quote-btn">GET A QUOTE</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wave Shape Divider -->
+            <div class="custom-shape-divider-bottom-1689366681">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h3>How it works</h3>
+                    <h2>Our 4-step hassle free process</h2>
+                </div>
+                <div class="steps-row">
+                    <!-- Step 1 -->
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+                        <h4>Get Your Instant Quote</h4>
+                        <p>Tell us about your device to get a free, no-obligation quote instantly.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fas fa-dolly"></i>
+                        </div>
+                        <h4>Ship It For Free</h4>
+                        <p>We'll send you a prepaid shipping label. Just pack your gadget and ship it at no cost to you.
+                        </p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fas fa-file-signature"></i>
+                        </div>
+                        <h4>Inspection</h4>
+                        <p>Our team performs a quick, transparent inspection to confirm the device's condition. We'll
+                            notify you as soon as it's complete.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+                        <h4>Get Paid Fast</h4>
+                        <p>Once your offer is accepted, we'll send payment for your gear within 24 hours via your chosen
+                            payment method.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Badges Section -->
+        <section class="trust-badges">
+            <div class="container">
+                <div class="section-header text-center animate-text">
+                    <p class="section-sub-italic">Trusted by thousands</p>
+                    <h2 class="section-title-large">Verified and accredited</h2>
+                    <p class="trust-desc">
+                        Selling your used tech online is easy with Canitcash. We are a BBB Accredited Business with a
+                        proven track record of honesty and a commitment to customer satisfaction. Read hundreds of
+                        positive reviews on Google and see our top ratings on Trustindex to find out why thousands of
+                        customers trust our reliable, transparent service.
+                    </p>
+                </div>
+
+                <div class="badges-row">
+                    <!-- BBB Badge with Flip Animation -->
+                    <div class="badge-column animate-card delay-1">
+                        <div class="bbb-flip-card">
+                            <div class="bbb-card-inner">
+                                <div class="bbb-card-front">
+                                    <i class="fab fa-gripfire"></i>
+                                    <!-- Closest torch approximations: gripfire or fire -->
+                                    <div class="bbb-text">
+                                        <span>ACCREDITED</span>
+                                        <span>BUSINESS</span>
+                                    </div>
+                                    <div class="bbb-logo-bottom">BBB</div>
+                                </div>
+                                <div class="bbb-card-back">
+                                    <p>Since Apr 2025</p>
+                                    <p>As of 1/13/2026</p>
+                                    <p class="click-profile">Click for Profile</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>BBB accredited</h3>
+                        <p class="badge-detail-text">Our commitment to honest business is verified by The BBB.</p>
+                    </div>
+
+                    <!-- Google Reviews -->
+                    <div class="badge-column animate-card delay-2">
+                        <div class="google-badge">
+                            <span class="google-logo">
+                                <span class="g-blue">G</span><span class="g-red">o</span><span
+                                    class="g-yellow">o</span><span class="g-blue">g</span><span
+                                    class="g-green">l</span><span class="g-red">e</span>
+                            </span>
+                            <div class="google-reviews-row">
+                                <span class="reviews-text">Reviews</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Google reviews</h3>
+                        <p class="badge-detail-text">Read 100's of reviews from our happy customers.</p>
+                    </div>
+
+                    <!-- TrustIndex -->
+                    <div class="badge-column animate-card delay-3">
+                        <div class="trustindex-badge">
+                            <div class="trust-g-icon">
+                                <i class="fab fa-google"></i>
+                            </div>
+                            <div class="trust-content">
+                                <div class="trust-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="rating-num">4.5</span>
+                                </div>
+                                <div class="trust-title">Top Rated Service</div>
+                                <div class="trust-verify">verified by <strong>Trustindex</strong> <i
+                                        class="fas fa-info-circle"></i></div>
+                            </div>
+                        </div>
+                        <h3>Top rated on TrustIndex</h3>
+                        <p class="badge-detail-text">See what our customers are saying about us.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Device Category Grid -->
+        <section class="device-grid-section">
+            <div class="container">
+                <div class="section-header text-center animate-text">
+                    <p class="section-sub-italic">Ready to sell?</p>
+                    <h2 class="section-title-large">Sell your used tech online</h2>
+                </div>
+                <div class="grid-container">
+                    <!-- Row 1 -->
+                    <div class="grid-item">
+                        <img src="Icons/Laptop.png" alt="Laptop">
+                        <span>LAPTOP</span>
+                    </div>
+                    <div class="grid-item">
+                        <img src="Icons/Dekstop.png" alt="Desktop"> <!-- Kept user's typo filename -->
+                        <span>DESKTOP</span>
+                    </div>
+                    <div class="grid-item">
+                        <img src="Icons/ALL IN ONE.png" alt="ALL IN ONE">
+
+                        <span>ALL IN ONE</span>
+                    </div>
+                    <div class="grid-item">
+                        <img src="Icons/Macbook.png" alt="MacBook">
+                        <span>MACBOOK</span>
+                    </div>
+                    <div class="grid-item">
+                        <img src="Icons/Projector.png" alt="Projector">
+                        <span>PROJECTOR</span>
+                    </div>
+                    <div class="grid-item">
+                        <i class="fas fa-box"></i> <!-- Mac Desktop -->
+                        <span>MAC DESKTOP</span>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class=" grid-item">
+                        <img src="Icons/GPU.png" alt="GPU"> <!-- GPU (Chip/Card) -->
+                        <span>GPU</span>
+                    </div>
+                    <div class="grid-item">
+                        <img src="Icons/CPU.png" alt="CPU"> <!-- CPU (Chip) - swap if needed -->
+                        <span>CPU</span>
+                    </div>
+                    <div class="grid-item">
+                        <img src="Icons/Fish Finder.png" alt="Fish Finder">
+                        <span>FISH FINDER</span>
+                    </div>
+                    <div class="grid-item">
+                        <img src="Icons/Audio.png" alt="Audio">
+                        <span>AUDIO</span>
+                    </div>
+                    <div class="grid-item">
+                        <img src="Icons/Games.png" alt="Games">
+                        <span>GAMES</span>
+                    </div>
+                    <div class="grid-item">
+                        <img src="Icons/Camera.png" alt="Camera">
+                        <span>CAMERA</span>
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="grid-item">
+                        <img src="Icons/IPHONE.png" alt="iPhone">
+                        <span>IPHONE</span>
+                    </div>
+                    <div class="grid-item">
+                        <img src="Icons/PHONE.png" alt="Phone">
+                        <span>PHONE</span>
+                    </div>
+                    <div class="grid-item">
+                        <img src="Icons/IPAD.png" alt="iPad">
+                        <span>IPAD</span>
+                    </div>
+                    <div class="grid-item">
+                        <img src="Icons/DRONE.png" alt="Drone">
+                        <!-- Drone (Closest flying object shape?) - or generic plane -->
+                        <span>DRONE</span>
+                    </div>
+                    <div class="grid-item">
+                        <img src="Icons/MORE.png" alt="More"> <!-- More (Grid/Collection) -->
+                        <span>MORE</span>
+                    </div>
+                    <div class="grid-item">
+                        <img src="Icons/Castom.png" alt="Custom"> <!-- Fixed typo to match folder: Castom.png -->
+                        <span>CUSTOM</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Benefits Section -->
+        <section class="trust-benefits">
+            <div class="container">
+                <div class="benefits-row">
+                    <div class="benefit-card animate-card">
+                        <h3>BBB Accredited</h3>
+                        <p>As a top-rated, accredited business, we are committed to providing a trustworthy and reliable
+                            tech buyback service. Our dedication to honest dealings is verified by the Better Business
+                            Bureau.</p>
+                        <a href="#" class="find-more-link">Find Out More →</a>
+                    </div>
+                    <div class="benefit-card animate-card delay-1">
+                        <h3>550+ Reviews</h3>
+                        <p>Our track record of exceptional customer satisfaction speaks for itself. We're proud of the
+                            positive feedback from thousands of customers who have chosen us to sell their gear.</p>
+                        <a href="#" class="find-more-link">Find Out More →</a>
+                    </div>
+                    <div class="benefit-card animate-card delay-2">
+                        <h3>Free Returns</h3>
+                        <p>We've eliminated the risk from selling your used tech. Our hassle-free returns policy ensures
+                            that if an offer isn't a perfect fit, no matter what, you can get your item back at no cost,
+                            no questions asked.</p>
+                        <a href="#" class="find-more-link">Find Out More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Sell To Us Section -->
+        <section class="why-sell-section">
+            <div class="container">
+                <div class="why-sell-header text-center animate-text">
+                    <h2 class="section-title-large">Why sell your tech to Canitcash?</h2>
+                    <p class="trust-desc">
+                        Choosing where to sell your electronics can feel daunting, but at Canitcash, we simplify the
+                        decision by offering unparalleled advantages designed for your convenience and peace of mind.
+                    </p>
+                </div>
+
+                <div class="why-sell-content">
+                    <div class="why-sell-intro-content animate-card">
+                        <ul class="why-sell-list">
+                            <li>We are founded by IT professionals with years of industry experience.</li>
+                            <li>Our lean business model allows us to offer more money for your items, often higher
+                                payouts than larger corporations.</li>
+                            <li>We provide a no-risk, no-hassle IT buyback experience from start to finish, a safe
+                                alternative to sell your computer equipment online for cash.</li>
+                        </ul>
+                        <div class="about-us-wrapper">
+                            <a href="#" class="btn-about-us">About Us</a>
+                        </div>
+                    </div>
+
+                    <div class="why-sell-grid">
+                        <!-- 01 Top Dollar Quotes -->
+                        <div class="why-grid-item animate-card delay-1">
+                            <div class="why-number-row">
+                                <span class="why-number">01</span>
+                                <div class="why-line"></div>
+                            </div>
+                            <h3>Top Dollar Quotes</h3>
+                            <p>When you sell your high-end tech online for cash with Canitcash, we believe you deserve
+                                the highest value. By maintaining a lean, efficient operation, we’re able to offer you
+                                more money for your tech than many of our larger competitors. Our quotes are competitive
+                                and reflective of the current market.</p>
+                        </div>
+
+                        <!-- 03 Risk-Free Process -->
+                        <div class="why-grid-item animate-card delay-2">
+                            <div class="why-number-row">
+                                <span class="why-number">03</span>
+                                <div class="why-line"></div>
+                            </div>
+                            <h3>Risk-Free Process</h3>
+                            <p>We've eliminated the anxiety from selling your items online. From our prepaid shipping
+                                labels to our No-Risk Guarantee, you never have to worry about hidden fees or
+                                obligations. Our promise is a secure transaction where you are always in control of your
+                                trade-in.</p>
+                        </div>
+
+                        <!-- 02 Fast Payments -->
+                        <div class="why-grid-item animate-card">
+                            <div class="why-number-row">
+                                <span class="why-number">02</span>
+                                <div class="why-line"></div>
+                            </div>
+                            <h3>Fast Payments</h3>
+                            <p>We know your time is valuable. Our IT professionals meticulously inspect your device, and
+                                we guarantee a 24-hour payout so you can get cash for your gear quickly and move on to
+                                your next project.</p>
+                        </div>
+
+                        <!-- 04 Secure & Responsible -->
+                        <div class="why-grid-item animate-card delay-1">
+                            <div class="why-number-row">
+                                <span class="why-number">04</span>
+                                <div class="why-line"></div>
+                            </div>
+                            <h3>Secure & Responsible</h3>
+                            <p>When you sell your equipment online, your privacy and the planet are our priorities. We
+                                perform a secure data wipe on every drive. Additionally, through our commitment to
+                                sustainability, we responsibly repurpose, donate, or recycle every item.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Vault Section -->
+        <section class="video-vault-section">
+            <div class="container">
+                <div class="video-vault-header text-center animate-text">
+                    <h2 class="video-vault-title">Cash the raccoon's video vault</h2>
+                    <p class="video-vault-subtitle">Follow the fun and get to know our mascot, Cash, as he helps people
+                        get paid fast to sell their tech online!</p>
+                </div>
+
+                <div class="video-vault-container animate-card">
+                    <div class="video-sidebar">
+                        <div class="sidebar-header">
+                            <span class="gallery-title">Canitcash Video Gallery:<br>Meet Cash</span>
+                            <span class="video-count">6 Videos</span>
+                        </div>
+                        <div class="video-playlist">
+                            <div class="playlist-item active" data-video-id="qWS7nnElReg">
+                                <div class="playlist-thumb">
+                                    <img src="https://img.youtube.com/vi/qWS7nnElReg/mqdefault.jpg" alt="Video 1">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <div class="playlist-info">
+                                    <span class="video-name">Sell Your Tech the Simple Way 🦝📦</span>
+                                    <span class="video-duration">0:08</span>
+                                </div>
+                            </div>
+                            <div class="playlist-item" data-video-id="kQBtDXulvE4">
+                                <div class="playlist-thumb">
+                                    <img src="https://img.youtube.com/vi/kQBtDXulvE4/mqdefault.jpg" alt="Video 2">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <div class="playlist-info">
+                                    <span class="video-name">Drone accepted. Now check out...</span>
+                                    <span class="video-duration">0:09</span>
+                                </div>
+                            </div>
+                            <div class="playlist-item" data-video-id="GWZIUO_BBaE">
+                                <div class="playlist-thumb">
+                                    <img src="https://img.youtube.com/vi/GWZIUO_BBaE/mqdefault.jpg" alt="Video 3">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <div class="playlist-info">
+                                    <span class="video-name">The Most Interesting Way to...</span>
+                                    <span class="video-duration">0:17</span>
+                                </div>
+                            </div>
+                            <div class="playlist-item" data-video-id="xhM9bkHzNM0">
+                                <div class="playlist-thumb">
+                                    <img src="https://img.youtube.com/vi/xhM9bkHzNM0/mqdefault.jpg" alt="Video 4">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <div class="playlist-info">
+                                    <span class="video-name">Happy Little Cash Accidents!</span>
+                                    <span class="video-duration">0:09</span>
+                                </div>
+                            </div>
+                            <div class="playlist-item" data-video-id="BWt7NwwyuRE">
+                                <div class="playlist-thumb">
+                                    <img src="https://img.youtube.com/vi/BWt7NwwyuRE/mqdefault.jpg" alt="Video 5">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <div class="playlist-info">
+                                    <span class="video-name">Sell Electronics Before you...</span>
+                                    <span class="video-duration">0:09</span>
+                                </div>
+                            </div>
+                            <div class="playlist-item" data-video-id="MW5jnSl2E08">
+                                <div class="playlist-thumb">
+                                    <img src="https://img.youtube.com/vi/MW5jnSl2E08/mqdefault.jpg" alt="Video 6">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <div class="playlist-info">
+                                    <span class="video-name">Sell Electronics to Afford...</span>
+                                    <span class="video-duration">0:09</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-main-player">
+                        <div class="video-wrapper">
+                            <iframe id="main-video-player" src="https://www.youtube.com/embed/qWS7nnElReg?rel=0"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Social CTA -->
+        <section class="video-social-cta-section">
+            <div class="container">
+                <div class="section-divider"></div>
+                <p class="cta-flavor-text animate-text">
+                    Is that grocery bill making you faint? Don’t worry, Cash the Raccoon has a solution! At
+                    Canitcash.com,
+                    we help you sell your old electronics like phones, laptops, and tablets to get some extra cash. Turn
+                    that unwanted tech into money for groceries—or anything else you need!
+                </p>
+                <div class="cta-columns-grid">
+                    <div class="cta-video-col animate-card">
+                        <h3>See all of our videos</h3>
+                        <a href="https://www.youtube.com/@canitcash" target="_blank" class="btn-youtube-cta">YOUTUBE</a>
+                    </div>
+                    <div class="cta-social-col animate-card delay-1">
+                        <h3>Follow us for more fun</h3>
+                        <div class="social-icons-flex">
+                            <a href="#" class="social-icon fb"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon yt"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-icon x"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" class="social-icon ig"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon threads"><i class="fa-brands fa-threads"></i></a>
+                            <a href="#" class="social-icon pin"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#" class="social-icon li"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Commitment Section -->
+        <section class="trust-commitment-section">
+            <div class="container">
+                <div class="commitment-header animate-text">
+                    <h2 class="commitment-title">Our commitment to your trust and security</h2>
+                    <p class="commitment-desc">
+                        Choosing where to sell your electronics can feel daunting, but at Canitcash, we simplify the
+                        decision by offering unparalleled advantages designed for your convenience and peace of mind.
+                        Our entire process is built to give you peace of mind from start to finish. We are your
+                        dedicated partner for turning old tech into cash, hassle-free way to sell your computers &
+                        equipment online for cash.
+                    </p>
+                </div>
+
+                <div class="commitment-content-row">
+                    <div class="commitment-list-col animate-card">
+                        <div class="commitment-item">
+                            <h3>1. Secure Data Wipe</h3>
+                            <p>Your privacy is our priority. We perform a secure data wipe on every device we receive to
+                                ensure all of your personal data is completely and irretrievably erased.</p>
+                        </div>
+                        <div class="commitment-item">
+                            <h3>2. No-Risk Guarantee</h3>
+                            <p>We’ve eliminated the anxiety from selling your devices. Our <a href="#"
+                                    class="blue-link">no-risk guarantee</a> ensures that if you ever disagree with a
+                                quote, we will return your device to you at no cost.</p>
+                        </div>
+                        <div class="commitment-item">
+                            <h3>3. Trusted, Verified & Accredited</h3>
+                            <p>Don’t just take our word for it. We are a <a href="#" class="blue-link">BBB Accredited
+                                    Business</a>, and our commitment to a great customer experience is verified by our
+                                <a href="#" class="blue-link">5-star ratings</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="commitment-visuals-col animate-card delay-1">
+                        <div class="trust-visual-item">
+                            <div class="visual-icon lock-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <span class="visual-label">SECURE<br>DATA WIPE</span>
+                        </div>
+                        <div class="trust-visual-item">
+                            <div class="visual-icon check-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <span class="visual-label">NO-RISK<br>GUARANTEE</span>
+                        </div>
+                        <div class="trust-visual-item">
+                            <div class="visual-icon ribbon-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <span class="visual-label">TRUSTED<br>& VERIFIED</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Summary Section -->
+        <section class="reviews-summary-section">
+            <div class="container">
+                <div class="reviews-summary-row items-center">
+                    <div class="google-verified-badge animate-card">
+                        <div class="google-badge-left">
+                            <span class="google-logo-small">
+                                <span class="g-blue">G</span><span class="g-red">o</span><span
+                                    class="g-yellow">o</span><span class="g-blue">g</span><span
+                                    class="g-green">l</span><span class="g-red">e</span>
+                            </span>
+                            <div class="stars-row">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4 class="badge-title">Top Rated Service 2025</h4>
+                            <p class="badge-verify">verified by Trustindex</p>
+                        </div>
+                        <div class="google-badge-right">
+                            <span class="rating-big">4.5</span>
+                        </div>
+                    </div>
+                    <div class="reviews-content-col animate-text delay-1">
+                        <h2 class="reviews-title">See what our customers are saying</h2>
+                        <p class="reviews-desc">
+                            We take pride in making the online buyback experience as rewarding as possible. Don’t just
+                            take our word for it—read our customer reviews to see why thousands have trusted us for a
+                            fast, fair, and reliable way to sell your tech online.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="trustindex-horizontal-bar animate-card">
+                    <div class="bar-left">
+                        <span class="g-logo-tiny">
+                            <span class="g-blue">G</span><span class="g-red">o</span><span
+                                class="g-yellow">o</span><span class="g-blue">g</span><span
+                                class="g-green">l</span><span class="g-red">e</span>
+                        </span>
+                        <div class="bar-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="bar-rating-text"><strong>4.5</strong> | Top Rated Service 2026</span>
+                    </div>
+                    <div class="bar-right">
+                        <span class="verified-text">Verified by Trustindex <i class="fas fa-info-circle"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Tabs Section -->
+        <section class="comparison-tabs-section">
+            <div class="container">
+                <div class="section-header text-center animate-text">
+                    <p class="section-subtitle">Compare your best options</p>
+                    <h2 class="section-title-large">Best place to sell your used<br>computers & tech</h2>
+                    <p class="section-desc centered">
+                        When you’re ready to sell your old hardware, knowing your options is key to making the best
+                        choice. This section breaks down the most common ways to sell your device, helping you compare
+                        speed, price, and convenience to find the right fit for you.
+                    </p>
+                </div>
+
+                <div class="comparison-tabs-container animate-card">
+                    <div class="comparison-tabs">
+                        <button class="tab-btn active blue" data-tab="pawn">1. Pawn shop</button>
+                        <button class="tab-btn blue" data-tab="buyback">2. Tech Buyback Services</button>
+                        <button class="tab-btn blue" data-tab="self">3. Sell it yourself</button>
+                        <button class="tab-btn blue" data-tab="local">4. Local computer shop</button>
+                        <button class="tab-btn blue" data-tab="bestbuy">5. Best Buy Trade-In Program</button>
+                    </div>
+                    <div class="tab-content-wrapper">
+                        <div id="pawn" class="tab-panel active">
+                            <p>Need instant cash for your used gear? A pawn shop is a fast option if you’re willing to
+                                trade a little value for convenience. While you’ll generally get less than market
+                                price, it’s a quick way to turn an used laptop, computer, or gaming console into cash on
+                                the spot. Just keep in mind that the final price is determined by the item’s condition,
+                                age, and specifications.</p>
+                        </div>
+                        <div id="buyback" class="tab-panel">
+                            <p>Online buyback services like Canitcash.com offer the perfect balance of convenience and
+                                value. You get an instant quote online, a free shipping label, and fast payment once
+                                your device is inspected. It's often the safest and most reliable way to get a fair
+                                price for your tech without the hassle of meeting strangers or negotiating.</p>
+                        </div>
+                        <div id="self" class="tab-panel">
+                            <p>Selling it yourself on platforms like eBay or Facebook Marketplace can potentially yield
+                                the highest price, but it comes with significant effort. You'll need to take photos,
+                                write descriptions, deal with potential scammers, and handle shipping or local meetups.
+                                It’s best if you have the time and patience to manage the entire sales process.</p>
+                        </div>
+                        <div id="local" class="tab-panel">
+                            <p>Local computer shops may buy your used hardware for resale or parts. This is a good
+                                option if you want to support a local business and get a quick transaction. However,
+                                availability varies by location, and their offer might be limited by their current
+                                inventory needs or repair specialties.</p>
+                        </div>
+                        <div id="bestbuy" class="tab-panel">
+                            <p>The Best Buy Trade-In Program is a convenient way to get store credit for your old
+                                electronics. If you're looking to upgrade to new gear immediately, this can be a smooth
+                                transition. Just be aware that you'll typically receive store credit rather than cash,
+                                and the trade-in values may not always match competitive online buyback offers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Mascot Section -->
+        <section class="comparison-mascot-section">
+            <div class="container">
+                <div class="comparison-mascot-single text-center animate-card">
+                    <img src="Icons/compute Your best options.png" alt="Compare Your Best Options"
+                        class="mascot-compare-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header text-center animate-text">
+                    <h2 class="section-title-large">Testimonials</h2>
+                </div>
+
+                <div class="testimonials-slider-container animate-card">
+                    <div class="section-divider short centered"></div>
+
+                    <div class="testimonials-slider">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-slide active">
+                            <p class="testimonial-text">
+                                This service is legit. Sent in my 3900x and got the exact quote they gave me. No issues
+                                whatsoever and fast turn around time once they received my item. I was updated along the
+                                way via emails. Highly recommend!
+                            </p>
+                            <div class="testimonial-user">
+                                <span class="user-avatar-placeholder"></span>
+                                <div class="user-info">
+                                    <h4 class="user-name">Dale K</h4>
+                                    <p class="user-meta">3 Google Contributions</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-slide">
+                            <p class="testimonial-text">
+                                I'm having an awesome experience with Can It Cash! If you ever want to get the best
+                                price for trade in on tech, Can It Cash is definitely the place. Before trading in my
+                                laptop to here, I looked all over the internet for the best place to trade in my laptop
+                                to. By far, Can It Cash had the best price of $198.00! I would definitely trust and
+                                recommend this place for tech trade in and will definitely come back again! Thanks Can
+                                It Cash!
+                            </p>
+                            <div class="testimonial-user">
+                                <span class="user-avatar-placeholder colored"></span>
+                                <div class="user-info">
+                                    <h4 class="user-name">Decreet</h4>
+                                    <p class="user-meta">4 Google Contributions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-dots">
+                        <span class="active" data-slide="0"></span>
+                        <span data-slide="1"></span>
+                        <span data-slide="2"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How do I get a quote?
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Simply search for your device or select it from the dropdowns to get an instant quote.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How do I ship my device?
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We send you a free prepaid shipping label. Box it up and drop it off!</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            When do I get paid?
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Payments are issued within 24 hours of inspection via PayPal, Check, or Zelle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta-section">
+            <div class="container text-center">
+                <div class="cta-content animate-text">
+                    <h2 class="section-title-large">Ready to get started?</h2>
+                    <p class="section-desc centered">
+                        You've learned about our commitment to a fast, fair, and seamless experience. With our
+                        no-obligation quotes and risk-free process, there's no reason to wait. Get started now and
+                        discover just how fast and easy it is to sell your tech online with Canitcash.
+                    </p>
+                    <a href="#" class="btn-primary btn-cta-large">GET AN INSTANT QUOTE</a>
+                </div>
+                <div class="cta-illustration animate-card delay-1">
+                    <img src="Icons/cta-girl-new.png" alt="Ready to get started" class="cta-img">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Fixed Floating Elements -->
+    <div class="fixed-badge-right">
+        <i class="fas fa-shield-alt"></i> Trusted Business
+    </div>
+    <div class="fixed-badge-left">
+        <i class="fas fa-universal-access"></i>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="Icons/Canitcash logo.png" alt="Canitcash Logo" class="footer-logo-img">
+                    </div>
+                    <p class="footer-about">
+                        Since 2018, we’ve offered a no-risk service to get cash for your laptops, desktops, and more
+                        online. High & honest prices, fast payments, free shipping, no obligation, instant quotes!
+                    </p>
+                    <div class="footer-social-row">
+                        <a href="#" class="social-box"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-box"><i class="fab fa-google"></i></a>
+                        <a href="#" class="social-box"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-box"><i class="fab fa-reddit-alien"></i></a>
+                        <a href="#" class="social-box"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="social-box"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Get Started -->
+                <div class="footer-links">
+                    <h3>Get Started</h3>
+                    <ul>
+                        <li><a href="#">About US</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">How It Works Video</a></li>
+                        <li><a href="#">Find Laptop Model</a></li>
+                        <li><a href="#">Inspection Process</a></li>
+                        <li><a href="#">Canitcash Trust Promise</a></li>
+                        <li><a href="#">Canitcash Reviews</a></li>
+                        <li><a href="#">Sell Electronics</a></li>
+                        <li><a href="#">Sell Laptop</a></li>
+                        <li><a href="#">Sell Desktop</a></li>
+                        <li><a href="#">Sell Projector</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Site Info -->
+                <div class="footer-links">
+                    <h3>Site Info</h3>
+                    <ul>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">BBB Accreditation</a></li>
+                        <li><a href="#">Google Reviews</a></li>
+                        <li><a href="#">Trust Index</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact Us -->
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <p>Contact US</p>
+                        <p>Canitcash LLC</p>
+                        <p>20755 Becker Lake Circle</p>
+                        <p>Richmond, MN 56368</p>
+                        <p>407-984-5529</p>
+                        <p><a href="mailto:support@canitcash.com">support@canitcash.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <div class="container footer-bottom-flex">
+                <div class="footer-copyright">
+                    © 2018-2025 – Canitcash LLC | All rights reserved
+                </div>
+                <div class="footer-disclaimer">
+                    Canitcash.com is not affiliated with the manufacturers of the items available for trade
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
